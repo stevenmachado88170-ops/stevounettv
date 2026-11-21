@@ -1,0 +1,24 @@
+const {contextBridge,ipcRenderer}=require('electron');
+contextBridge.exposeInMainWorld('salon',{
+  config:ipcRenderer.sendSync('config'),
+  launch:id=>ipcRenderer.send('launch',id),
+  save:c=>ipcRenderer.send('save',c),
+  apps:()=>ipcRenderer.invoke('apps'),
+  games:n=>ipcRenderer.invoke('games',n),
+  play:i=>ipcRenderer.send('play',i),
+  http:(u,h)=>ipcRenderer.invoke('http',u,h),
+  trailer:u=>ipcRenderer.send('trailer',u),
+  onMedia:cb=>ipcRenderer.on('media',(e,m)=>cb(m)),
+  media:c=>ipcRenderer.send('media',c),
+  mediaSource:id=>ipcRenderer.send('mediasrc',id),
+  lecteurOpen:()=>ipcRenderer.send('lecteur-open'),
+  onRunning:cb=>ipcRenderer.on('running',(e,l)=>cb(l)),
+  resume:()=>ipcRenderer.send('resume'),
+  power:a=>ipcRenderer.send('power',a),
+  addApp:a=>ipcRenderer.send('addapp',a),
+  ls:(d,f)=>ipcRenderer.invoke('ls',d,f),
+  importLogo:p=>ipcRenderer.invoke('importlogo',p),
+  importWall:p=>ipcRenderer.invoke('importwall',p),
+  wallFiles:d=>ipcRenderer.invoke('wallfiles',d),
+  importAppLogo:(p,id)=>ipcRenderer.invoke('importapplogo',p,id)
+});

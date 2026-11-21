@@ -1,0 +1,32 @@
+{
+  "name": "salon-launcher",
+  "version": "1.0.0",
+  "description": "Launcher TV pour Linux",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "start:safe": "electron . --no-sandbox",
+    "dist": "electron-builder --linux AppImage"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  },
+  "build": {
+    "appId": "local.salon.launcher",
+    "files": [
+      "main.js",
+      "preload.js",
+      "overlay-preload.js",
+      "overlay.html",
+      "index.html",
+      "config.default.json"
+    ],
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "category": "AudioVideo"
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "jellyfin": {
+    "url": "http://jellyfin.local:8096",
+    "key": "",
+    "tmdb": ""
+  },
+  "apps": [
+    {
+      "id": "jellyfin",
+      "n": "Jellyfin",
+      "s": "Médiathèque",
+      "jf": true,
+      "cmd": "",
+      "args": []
+    },
+    {
+      "id": "kodi",
+      "n": "Kodi",
+      "s": "Médias",
+      "cmd": "kodi",
+      "args": []
+    },
+    {
+      "id": "youtube",
+      "n": "YouTube",
+      "s": "Webapp",
+      "url": "https://www.youtube.com/tv",
+      "cmd": "",
+      "args": []
+    },
+    {
+      "id": "steam",
+      "n": "Steam",
+      "s": "Jeux",
+      "cmd": "steam",
+      "args": [
+        "-gamepadui"
+      ]
+    },
+    {
+      "id": "retroarch",
+      "n": "RetroArch",
+      "s": "Rétro",
+      "cmd": "retroarch",
+      "args": []
+    }
+  ],
+  "meteo": {
+    "ville": ""
+  },
+  "jeux": {
+    "cmd": "retroarch",
+    "dossier": ""
+  },
+  "carrousel": {
+    "libs": [],
+    "tri": "ajouts",
+    "hasard": true
+  },
+  "navigateur": {
+    "cmd": ""
+  },
+  "fermeture": {
+    "raccourci": "Escape",
+    "zone": 10
+  },
+  "apparence": {
+    "fond": "#12131a",
+    "tuiles": "",
+    "flou": 12,
+    "bouton": "#ff6a2b",
+    "logo": {
+      "type": "defaut",
+      "src": ""
+    },
+    "horloge": {
+      "heure": true,
+      "meteo": true,
+      "taille": "moyenne"
+    }
+  },
+  "nom": "Salon",
+  "accueil": {
+    "base": "moyenne",
+    "ordre": [],
+    "tailles": {}
+  },
+  "biblio": {
+    "type": "movie",
+    "tri": "trending"
+  },
+  "jfMigre": true,
+  "media": true
+}
