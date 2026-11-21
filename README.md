@@ -1,5 +1,7 @@
 # Salon – launcher TV pour Linux
 
+<img width="2200" height="1288" alt="stevounettv_accueil" src="https://github.com/user-attachments/assets/4e3a899b-a9d9-4065-b4b3-28107b9e5af5" /> <img width="2200" height="1288" alt="stevounettv_Bibliotheque" src="https://github.com/user-attachments/assets/3e5b000e-adef-4a8b-96f8-f37cbd15fd21" /><img width="2200" height="1288" alt="stevounettv_jeux" src="https://github.com/user-attachments/assets/4ed53a6d-f621-4ae1-8f89-1f14f55ea291" /><img width="2200" height="1288" alt="stevounettv_parametres" src="https://github.com/user-attachments/assets/94c2df87-1f23-4cfd-8584-811b5ef43799" />
+
 ## Installation (toutes distributions)
     chmod +x install.sh run.sh && ./install.sh
 Le script détecte ta distribution (apt, dnf/yum, pacman, zypper, apk, xbps, emerge), installe Node.js 18+, `playerctl` et les bibliothèques
